@@ -20,6 +20,9 @@ import SpringBootFramework.Model.Endereco;
 public interface ViaCepService {
 
     @GetMapping("/{cep}/json/")
-    Endereco consultarCep(@PathVariable("cep") String cep);
+    static Endereco consultarCep(@PathVariable("cep") String cep) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'consultarCep'");
+    }
 
 }
